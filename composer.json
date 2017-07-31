@@ -1,0 +1,9 @@
+{
+  "name": "faithcatholic/mass_times",
+  "type": "drupal-module",
+  "description": "Mass Times entity.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}
