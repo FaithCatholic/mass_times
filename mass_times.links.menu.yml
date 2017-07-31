@@ -1,0 +1,20 @@
+
+# Mass times menu items definition
+entity.mass_times.collection:
+  title: 'Mass Times'
+  route_name: view.admin_masstimes.mtedit
+  description: 'List Mass Times'
+  parent: system.admin_content
+  weight: 100
+
+mass_times.admin.structure.settings:
+  title: Mass times settings
+  description: 'Configure Mass times entities'
+  route_name: mass_times.settings
+  parent: system.admin_structure
+
+entity.mass_times.add_form:
+  title: 'Add Mass Time'
+  parent: entity.mass_times.collection
+  description: 'Add Mass Time'
+  route_name: entity.mass_times.add_form

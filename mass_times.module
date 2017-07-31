@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains mass_times.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mass_times_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mass_times module.
+    case 'help.page.mass_times':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Mass Times') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+entity.mass_times.add_form:
+  route_name: entity.mass_times.add_form
+  title: 'Add Mass times'
+  appears_on:
+    - entity.mass_times.collection

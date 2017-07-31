@@ -1,0 +1,22 @@
+# Mass times routing definition
+mass_times.settings_tab:
+  route_name: mass_times.settings
+  title: 'Settings'
+  base_route: mass_times.settings
+
+entity.mass_times.canonical:
+  route_name: entity.mass_times.canonical
+  base_route: entity.mass_times.canonical
+  title: 'View'
+
+entity.mass_times.edit_form:
+  route_name: entity.mass_times.edit_form
+  base_route: entity.mass_times.canonical
+  title: 'Edit'
+
+entity.mass_times.delete_form:
+  route_name:  entity.mass_times.delete_form
+  base_route:  entity.mass_times.canonical
+  title: Delete
+  weight: 10
+

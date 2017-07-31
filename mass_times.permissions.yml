@@ -1,0 +1,22 @@
+add mass times entities:
+  title: 'Create new Mass times entities'
+
+administer mass times entities:
+  title: 'Administer Mass times entities'
+  description: 'Allow to access the administration form to configure Mass times entities.'
+  restrict access: true
+
+delete mass times entities:
+  title: 'Delete Mass times entities'
+
+edit mass times entities:
+  title: 'Edit Mass times entities'
+
+access mass times overview:
+  title: 'Access the Mass times overview page'
+
+view published mass times entities:
+  title: 'View published Mass times entities'
+
+view unpublished mass times entities:
+  title: 'View unpublished Mass times entities'
