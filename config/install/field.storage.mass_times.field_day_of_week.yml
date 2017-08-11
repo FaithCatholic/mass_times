@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - mass_times
+    - options
+id: mass_times.field_day_of_week
+field_name: field_day_of_week
+entity_type: mass_times
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: sat
+      label: Saturday
+    -
+      value: sun
+      label: Sunday
+    -
+      value: mon
+      label: Monday
+    -
+      value: tue
+      label: Tuesday
+    -
+      value: wed
+      label: Wednesday
+    -
+      value: thur
+      label: Thursday
+    -
+      value: fri
+      label: Friday
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

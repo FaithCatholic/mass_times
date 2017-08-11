@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - mass_times
+    - options
+id: mass_times.field_service_type
+field_name: field_service_type
+entity_type: mass_times
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: adoration
+      label: Adoration
+    -
+      value: confession
+      label: Confession
+    -
+      value: devotion
+      label: Devotion
+    -
+      value: holy_days
+      label: 'Holy Days'
+    -
+      value: vigil_holy_days
+      label: 'Vigil for Holy Days'
+    -
+      value: week_day
+      label: Weekday
+    -
+      value: weekend
+      label: Weekend
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
