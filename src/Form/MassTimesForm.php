@@ -34,13 +34,13 @@ class MassTimesForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label Mass times.', [
+        \Drupal\Core\Messenger\MessengerInterface::addMessage($this->t('Created the %label Mass times.', [
           '%label' => $entity->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label Mass times.', [
+        \Drupal\Core\Messenger\MessengerInterface::addMessage($this->t('Saved the %label Mass times.', [
           '%label' => $entity->label(),
         ]));
     }

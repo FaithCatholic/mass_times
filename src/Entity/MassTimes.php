@@ -43,6 +43,11 @@ use Drupal\user\UserInterface;
  *     "langcode" = "langcode",
  *     "status" = "status",
  *   },
+  *   revision_metadata_keys = {
+ *     "revision_user" = "revision_user",
+ *     "revision_created" = "revision_created",
+ *     "revision_log_message" = "revision_log",
+ *   },
  *   links = {
  *     "canonical" = "/admin/structure/mass_times/{mass_times}",
  *     "add-form" = "/admin/structure/mass_times/add",

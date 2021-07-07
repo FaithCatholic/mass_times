@@ -11,32 +11,26 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: 1_sat
+      value: sat
       label: Saturday
     -
-      value: 2_sun
+      value: sun
       label: Sunday
     -
-      value: 3_mon
+      value: mon
       label: Monday
     -
-      value: 4_tue
+      value: tue
       label: Tuesday
     -
-      value: 5_wed
+      value: wed
       label: Wednesday
     -
-      value: 6_thur
+      value: thur
       label: Thursday
     -
-      value: 7_fri
+      value: fri
       label: Friday
-    -
-      value: 8_sat
-      label: Saturday
-    -
-      value: 9_perp
-      label: Perpetual
   allowed_values_function: ''
 module: options
 locked: false
