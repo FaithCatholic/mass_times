@@ -182,7 +182,7 @@ class MassTimes extends ContentEntityBase implements MassTimesInterface {
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Mass times entity.'))
       ->setSettings([
-        'max_length' => 255,
+        'max_length' => 50,
         'text_processing' => 0,
       ])
       ->setDefaultValue('')
