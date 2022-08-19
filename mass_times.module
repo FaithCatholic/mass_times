@@ -22,3 +22,10 @@ function mass_times_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+function mass_times_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  // Make name field longer.
+  if ($form_id == 'directory_parishes_add_form' || $form_id == 'directory_parishes_edit_form') {
+    $form['name']['widget'][0]['value']['#maxlength'] = 255;
+  }
+}
