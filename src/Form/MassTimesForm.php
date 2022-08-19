@@ -34,15 +34,11 @@ class MassTimesForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        \Drupal\Core\Messenger\MessengerInterface::addMessage($this->t('Created the %label Mass times.', [
-          '%label' => $entity->label(),
-        ]));
+        \Drupal::messenger()->addMessage(t('Created the mass time.'));
         break;
 
       default:
-        \Drupal\Core\Messenger\MessengerInterface::addMessage($this->t('Saved the %label Mass times.', [
-          '%label' => $entity->label(),
-        ]));
+        \Drupal::messenger()->addMessage(t('Saved the mass time.'));
     }
     $form_state->setRedirect('entity.mass_times.canonical', ['mass_times' => $entity->id()]);
   }
